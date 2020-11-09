@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C01Selector02.html</title>
+
+    <style>
+        h1{color:green;}
+        input{
+            color: blue; font-size: 20px; font-weight: bold;
+        }
+        h1[title]{
+            border: 1px solid red;
+        }
+        input[type='text']{
+            color: red;
+        }
+        input[type="tel"]{
+            border: none;
+            border:bottom:2px solid gray;
+            border-right:5px solid purple;
+        }
+        input[type=password]{
+            background-color: yellow;
+        }
+        a [href$=com]{
+            border: 5px green dotted;
+        }
+        a[href^=http]{
+            font-size: 30px;
+        }
+        a[href="www.nate.com"]{
+            background-color: yellow;
+        }
+        h2~div{
+            color: blue;
+        }
+        h2+div{
+            color: red; font-weight: bold; background-color: green;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>title속성이 없는 h1태그</h1>
+    <h1 title="제목태그임">title속성이 있는 h1태그</h1>
+
+    <form action="">
+        이름 : <input type="text" /><br />
+        아이디 : <input type="text" /><br />
+        비밀번호 : <input type="password" /><br />
+        전화번호 : <input type="tel" />  
+    </form>
+    <h2>정규표현식으로 사용한 선택자</h2>
+    <a href="http://www.naver.com">난 네이버임</a>
+    <br />
+    <a href="http://www.daum.net">난 다음임</a>
+    <br />
+    <a href="www.nate.com">난 네이트임</a>
+
+    <h2 id="title">동위(~,+) 선택자</h2>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+    <div>div5</div>
+    
+</body>
+</html>
