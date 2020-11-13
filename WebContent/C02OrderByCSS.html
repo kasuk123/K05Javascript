@@ -8,11 +8,12 @@
         h2{ color:blue}
         h2{ color: red;}/*뒤에서 선언된 red가 적용됨.*/
 
+        /*가장 높은 우선순위를 부여받게 됨. */
         #mnt { color:gray !important;}
 
         dd{ color:green; }
     </style>
-
+    <!-- dd태그선택자는 아래에서 선언된 파란색으로 적용됨. -->
     <link rel="stylesheet" href="./style/style.css" />
     
 </head>
@@ -31,6 +32,7 @@
         <dd>종로구</dd>
         <dd>강동구</dd>
         <dd>금천구</dd>
+        <!-- 인라인 스타일로 지정된 빨간색으로 적용됨. -->
         <dd style="color:red;">강남구</dd>
     </dl>
 </body>

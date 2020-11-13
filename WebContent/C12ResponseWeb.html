@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C12ResponseWeb.html</title>
+    
+    <style type="text/css">
+    /* 전체선택자를 통해 문서의 기본스타일을 지정 */
+    *{margin: 0; padding: 0; font-family: verdana;}
+
+    #Allwrap{
+        margin: 0 auto; text-align: center; 
+    }
+    #PartWrap{
+        width: 100%; text-align: left;
+        border: 1px solid blue;
+    }
+
+    #header{
+        border:1px solid blue; text-align:center;
+        height:100%; line-height:100px;
+    }
+    #nav ul{
+        list-style:none;
+
+        overflow:hidden;
+    }
+
+    #nav ul li{
+        font-size: 1.5em; font-weight: bold; height: 50px;
+        width: 20%; float: left ; border: 1px solid blue;
+        text-align: center; line-height: 50px;
+        box-sizing: border-box;
+    }
+    #ContentWrap #content > h2{
+        border-bottom: 1px #808080 solid;
+        font-size: 2em;
+    }
+    #content{
+        padding: 20px;
+    }
+    #footer{
+        font-size: 2em; font-weight: bold; height: 100px;
+        line-height: 100px; text-align: center;
+        border: 1px solid blue;
+    }
+
+    /*
+     반응형웹을 구현하기 위해 미디어쿼리를 사용한다.
+     디바이스의 해상도에 따라 다른 형태의 화면을
+     보여주게된다. 이경우 모바일용 웹화면을 별도로 제작하지
+     않아도 되므로 편리하다.
+     */
+    @media scrren and(max-width: 640px;){
+        #AllWrap{ width: 100%;}
+        #content p{
+            font-size: 2em; color: black;
+        }
+    }
+    @media screen and (min-width:1000px){
+        #AllWrap{width: 80%;}
+        #content p{
+            font-size: 1em; color: green;
+        }
+    }
+    @media screen and(min-width: 641px;) and (max-width: 999px;){
+        #AllWrap{ width: 100%;}
+        #content p{
+            font-size: 1.5em; color: red;
+            background-color: black;
+        }
+    }
+    
+</style>
+
+
+</head>
+<body>
+    <div id="AllWrap">
+        <div id="PartWrap">
+            <div id="header">
+                <h1>HEADER</h1>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li>메뉴1입니다</li>
+                    <li>메뉴2</li>
+                    <li>메뉴3</li>
+                    <li>메뉴4</li>
+                    <li>메뉴5</li>
+                </ul>
+            </div>
+        </div>
+        <div id="ContentWrap">
+            <div id="content">
+                <h2>헤드라인을 삽입해 주세요</h2>
+                <p>
+                    신문기사를 삽입해 주세요.
+                </p>
+            </div>
+        </div>
+        <div id="footer">
+                <h1>FOOTER</h1>
+        </div>
+    </div>
+</body>
+</html>

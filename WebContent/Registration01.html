@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+
+    <style>
+
+     *{
+        font-family: d2coding;
+        font-size: 1em;
+        border-radius: 5px;
+        table tr;    
+        
+    }
+
+
+    
+
+    </style>
+
+
+</head>
+<body>
+    <table width="0" style="padding: 5px 0 5px 0;">
+        
+    <tr height="2"><td colspan="2"></td></tr>
+    <tr>    
+    <td> * 아이디</td>
+    <td><input type="text" id="mbid">
+    <input type = "button" value = "중복확인" style="background-color:  #D8D8D8; font-size: 15px;"
+    /> &nbsp;&nbsp;&nbsp;+4~15자,첫 영문자, 영문자와 숫자 조합</td>
+
+
+
+    </tr>  
+    <tr>
+        <td>* 비밀번호</td>
+        <td><input type="text" pw="mbpw"></td>
+    </tr>
+    <tr>
+        <td>* 비밀번호 확인</td>
+        <td><input type="text" pw="mbpw">&nbsp;(확인을 위해 다시 입력해주세요.)</td>
+    </tr>
+    <tr>
+        <td>* 이름</td>
+        <td><input type="text" name="mbname"></td>
+    </tr>
+    <tr>
+        <td>생년월일</td>
+        <td><input type="text" birth="mbbirth"></td>
+    </tr>
+    <tr>
+        <td>* 이메일</td>
+        <td>
+            <input type='text' name="email"> @
+            <input type='text' name="email_dns">
+              <select name="emailaddr">
+                 <option value="">직접입력</option>
+                 <option value="daum.net">daum.net</option>
+                 <option value="empal.com">empal.com</option>
+                 <option value="gmail.com">gmail.com</option>
+                 <option value="hanmail.net">hanmail.net</option>
+                 <option value="msn.com">msn.com</option>
+                 <option value="naver.com">naver.com</option>
+                 <option value="nate.com">nate.com</option>
+              </select>
+    </tr>
+    <td>  주소</td>
+    <td><input type = "button" value = "주소찾기" style="background-color: #D8D8D8;
+        font-size: 15px;"/></td>
+    <tr>
+        <td>전화번호</td>
+        <td><input type="text"name="cel_h1"> -
+            <input type="text" name="cel_h2_1"> -
+            <input type="text" name="cel_h2_2">
+        </td>
+
+    </tr>
+    <tr>
+        <td>* 휴대전화</td>
+        <td><input type="text"name="tel_h1"> -
+            <input type="text" name="tel_h2_1"> -
+            <input type="text" name="tel_h2_2">
+        </td>
+
+    </tr>
+    <tr>
+        <td>* 관심분야</td>
+        <td>
+        <select>
+            <option value="">관심분야 선택</option>
+            <option value="스포츠">스포츠</option>
+            <option value="영화"">영화</option>
+            <option value="음악"">음악</option>
+            <option value="공부">공부</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td>* 가입경로</td>
+        <td>
+            <select>
+                <option value="">가입경로 선택</option>
+                <option value="지인추천">지인추천</option>
+                <option value="인터넷 방문">인터넷 방문</option>
+                <option value="sns"">sns</option>
+            </select>
+            </td>
+
+    </tr>
+    
+    </table>
+
+    <br/>
+
+
+    <input type = "submit" value = "등록하기"/>
+    <input type = "reset" value = "새로 쓰기"/>
+    </center>
+
+
+
+</body>
+</html>
